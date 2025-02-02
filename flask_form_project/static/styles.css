@@ -1,0 +1,92 @@
+/* Global Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading Style */
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Form Layout Styling */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Input and Select Styling */
+input[type="text"],
+select,
+input[type="checkbox"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+}
+
+/* Checkbox Style */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+/* Button Style */
+/* Basic button style */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Active (pressed) effect */
+button:active {
+    background-color: #388e3c; /* Even darker green when pressed */
+    transform: scale(0.98); /* Slight shrink effect */
+    box-shadow: 0 5px #666, 0 -3px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Focus effect (when the button is focused by keyboard) */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Blue glow when focused */
+}
+

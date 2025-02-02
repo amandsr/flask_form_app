@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h2 style="text-align: center;">Request Form</h2>
+    <form id="requestForm">
+        <!-- Requester Name Field -->
+        <div class="form-group">
+            <label for="requester">Requester:</label>
+            <input type="text" id="requester" name="requester" required>
+        </div>
+
+        <!-- Cloud Selection Field -->
+        <div class="form-group">
+            <label for="cloud">Cloud:</label>
+            <select id="cloud" name="cloud" required>
+                <option value="AWS">AWS</option>
+                <option value="GCP">GCP</option>
+            </select>
+        </div>
+
+        <!-- Division Selection Field -->
+        <div class="form-group">
+            <label for="division">Division:</label>
+            <select id="division" name="division" required>
+                <option value="abc">ABC</option>
+                <option value="xyz">XYZ</option>
+                <option value="lol">LOL</option>
+            </select>
+        </div>
+
+        <!-- Product Selection Field (Dynamically filled) -->
+        <div class="form-group">
+            <label for="product">Product:</label>
+            <select id="product" name="product" required>
+                <!-- Product options will be populated based on Division -->
+            </select>
+        </div>
+
+        <!-- App Type Selection Field -->
+        <div class="form-group">
+            <label for="appType">App Type:</label>
+            <select id="appType" name="appType" required>
+                <option value="app">App</option>
+                <option value="web">Web</option>
+                <option value="database">Database</option>
+            </select>
+        </div>
+
+        <!-- OS Selection Field -->
+        <div class="form-group">
+            <label for="os">OS:</label>
+            <select id="os" name="os" required>
+                <option value="Redhat">Redhat</option>
+                <option value="Windows">Windows</option>
+            </select>
+        </div>
+
+        <!-- OS Version Field (Dynamically filled) -->
+        <div class="form-group">
+            <label for="osVersion">OS Version:</label>
+            <select id="osVersion" name="osVersion" required>
+                <!-- OS Version options will be populated based on OS -->
+            </select>
+        </div>
+
+        <!-- Region Selection Field (Dynamically filled) -->
+        <div class="form-group">
+            <label for="region">Region:</label>
+            <select id="region" name="region" required>
+                <!-- Region options will be populated based on Product -->
+            </select>
+        </div>
+
+        <!-- Instance Type Field -->
+        <div class="form-group">
+            <label for="instanceType">Instance Type:</label>
+            <input type="text" id="instanceType" name="instanceType">
+        </div>
+
+        <!-- Monitoring Checkbox -->
+        <div class="form-group">
+            <label for="monitoring">Monitoring:</label>
+            <input type="checkbox" id="monitoring" name="monitoring">
+        </div>
+
+        <!-- Backup Checkbox -->
+        <div class="form-group">
+            <label for="backup">Backup:</label>
+            <input type="checkbox" id="backup" name="backup">
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="/static/form.js"></script>
+</body>
+</html>
