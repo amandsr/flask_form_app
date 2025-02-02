@@ -1,0 +1,11 @@
+[Unit]
+Description=Flask Application
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/flask_form_project
+ExecStart=/usr/local/bin/gunicorn --workers 4 --bind 0.0.0.0:8000 app:app
+
+[Install]
+WantedBy=multi-user.target
